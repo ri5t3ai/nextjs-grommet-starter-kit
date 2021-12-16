@@ -1,10 +1,14 @@
 import App from 'next/app'
 import { Grommet } from 'grommet';
+import LayoutPublic from '../containers/layouts/LayoutPublic';
 
 function Quest({ Component, pageProps }) {
     return (
     <Grommet plain>
-     <Component {...pageProps} />
+      <LayoutPublic>
+      <Component {...pageProps} />
+      </LayoutPublic>
+ 
     </Grommet>
 )}
   
