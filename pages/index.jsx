@@ -1,22 +1,27 @@
-import { Box, Grommet } from 'grommet';
+import { Box, Main, Heading, Paragraph } from "grommet"
 
-const Home = () => {
-    const AppBar = (props) => (
-        <Box
-          tag='header'
-          direction='row'
-          align='center'
-          justify='between'
-          background='brand'
-          pad={{ left: 'medium', right: 'small', vertical: 'small' }}
-          elevation='medium'
-          style={{ zIndex: '1' }}
-          {...props}
-        />
-       );
+
+const Home = (props) => {
+    
       
     return (
-        <AppBar>Hello Grommet!</AppBar>
+        <Box
+        tag='header'
+        direction='row'
+        align='center'
+        justify='center'
+        background='primary'
+        pad={{ left: 'medium', right: 'small', vertical: 'small' }}
+        elevation='medium'
+        height={"100%"}
+        style={{ zIndex: '1' }}
+        {...props}
+      >
+        <Main pad="large">
+  <Heading>Something</Heading>
+  <Paragraph>Something about something</Paragraph>
+</Main>
+          </Box>
     )
 }
 

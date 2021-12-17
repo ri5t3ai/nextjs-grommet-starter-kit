@@ -1,15 +1,16 @@
 import App from 'next/app'
-import { Grommet } from 'grommet';
-import LayoutPublic from '../containers/layouts/LayoutPublic';
+import { RecoilRoot } from 'recoil';
+
+import LayoutPublic from '../containers/layout/LayoutPublic';
 
 function Quest({ Component, pageProps }) {
     return (
-    <Grommet plain>
+      <RecoilRoot>
       <LayoutPublic>
       <Component {...pageProps} />
       </LayoutPublic>
- 
-    </Grommet>
+      </RecoilRoot>
+
 )}
   
   // Only uncomment this method if you have blocking data requirements for
